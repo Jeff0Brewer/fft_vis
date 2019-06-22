@@ -78,6 +78,7 @@ class Vis{
 				let angle = i/this.level_detail*Math.PI;
 				this.points.push([Math.cos(angle)*len, Math.sin(angle)*len]);
 			}
+			f_ind--;
 			for(let i = this.level_detail; i >= 0; i--, f_ind--){
 				let len = map(fData[f_ind], 0, 255, 0, size);
 				let angle = -1*i/this.level_detail*Math.PI;
